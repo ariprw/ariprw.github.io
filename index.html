@@ -52,6 +52,7 @@
 		}
 		img {
 			user-select: none;
+			width: 100%;
 		}
 		.konten {
 			padding: 22px;
@@ -170,6 +171,80 @@
 			color: #555;
 			margin-bottom: -22px;
 			text-align: center;
+		}
+		.notif1 {
+			background-color: rgb(169 169 169 / 15%);
+			backdrop-filter: blur(5px);
+			display: flex;
+			flex-direction: column;
+			flex-grow: 1;
+			justify-content: space-around;
+			min-height: 100vh;
+			padding: 0px 15px;
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 10;
+			animation: notif .1s ease-in-out;
+			-webkit-animation: notif .1s ease-in-out;
+		}
+		.iNotif1 {
+			background: #fff;
+			border: 1px solid #ccc;
+			border-radius: 18px;
+			margin: 0 auto;
+			padding: 15px;
+		}
+		.lihatFoto {
+			position: relative;
+		}
+		.lihatFoto img {
+			border-radius: 18px;
+			display: block;
+			height: auto !important;
+			max-height: 80vh;
+		}
+		.tutupFoto {
+			background: #ef1b4e;
+			border-radius: 50%;
+			color: #fff;
+			cursor: pointer;
+			font-size: 14px;
+			overflow: hidden;
+			padding: 0px 7px;
+			position: absolute;
+			top: 8px;
+			right: 8px;
+			user-select: none;
+			opacity: 0.8;
+		}
+		.tutupFoto:hover {
+			background: #000;
+		}
+		.fixBody {
+			overflow: hidden;
+		}
+
+		@keyframes notif {
+			0% {
+				transform: translateY(30px);
+				opacity: 0;
+			}
+			100% {
+				transform: translateY(0);
+				opacity: 0.95;
+			}
+		}
+		@-webkit-keyframes notif {
+			0% {
+				transform: translateY(30px);
+				opacity: 0;
+			}
+			100% {
+				transform: translateY(0);
+				opacity: 0.95;
+			}
 		}
 
 		@media screen and (max-width: 960px) {
@@ -408,8 +483,49 @@
 		</div>
 	</div>
 
+	<div id="lihatFoto"></div>
 	<div class="eport">//</div>
 	<div class="hr"></div>
 </div>
+
+<script>
+	document.addEventListener('DOMContentLoaded', function() {
+		const body = document.getElementsByTagName('body')[0];
+		const lihatFoto = document.getElementById('lihatFoto');
+
+		Array.from(document.getElementsByTagName('img')).forEach(function(item) {
+			item.removeEventListener('click', klikFoto);
+			item.addEventListener('click', klikFoto);
+		});
+
+		function klikFoto(e) {
+			const src = e.target.src;
+			body.className = 'fixBody';
+			lihatFoto.innerHTML = `
+			<div class="notif1">
+				<div class="iNotif1 lihatFoto">
+					<img src="${src}">
+					<span class="tutupFoto">x</span>
+				</div>
+			</div>
+			`;
+
+			const tutupFoto = document.getElementsByClassName('tutupFoto')[0];
+			if (tutupFoto) {
+				tutupFoto.addEventListener('click', function() {
+					body.className = '';
+					lihatFoto.innerHTML = '';
+				});
+			}
+		}
+
+		window.addEventListener('keyup', function(e) {
+			if (e.keyCode == 27) {
+				body.className = '';
+				lihatFoto.innerHTML = '';
+			}
+		});
+	});
+</script>
 </body>
 </html>
