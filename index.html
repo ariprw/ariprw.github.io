@@ -22,162 +22,203 @@
 	<meta name="twitter:description" content="Saya adalah seorang web developer dan sistem analis program dengan pengalaman kerja lebih dari 2 tahun yang berorientasi pada Full Stack Developer." />
 	<meta name="twitter:title" content="Ari Prasetyawan" />
 	<meta name="twitter:image" content="https://ariprw.github.io/upload/Ari.jpg" />
-<style>
-	@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
-	* {
-		margin: 0;
-		padding: 0;
-		font-size: 16px;
-		font-family: 'Roboto', sans-serif;
-		line-height: 1.5;
-	}
-	body {
-		background: #fff;
-		color: #000;
-	}
-	a:link, a:visited, a:active {
-		text-decoration: none;
-		color: #000;
-		font-size: 12px;
-	}
-	a:hover {
-		color: #5369f0;
-	}
-	p {
-		margin-bottom: 30px;
-	}
-	ul, ol {
-		margin-left: 18px;
-		margin-bottom: 30px;
-	}
-	img {
-		user-select: none;
-	}
-	.konten {
-		padding: 22px;
-		max-width: 770px;
-		margin: 0 auto;
-	}
-	.lp1 {
-		font-size: 40px;
-		font-weight: 400;
-		text-align: center;
-	}
-	.lp1 h1 {
-		font-size: 40px;
-		font-weight: 400;
-	}
-	.lp2 {
-		font-size: 12px;
-		text-align: center;
-	}
-	.hr {
-		border-top: 1px solid #ccc;
-		margin: 10px 0px 20px 0px;
-	}
-	.j {
-		font-weight: 600;
-		margin-bottom: 4px;
-	}
-	.b {
-		font-weight: 600;
-	}
-	.ketpre {
-		white-space: pre-line;
-	}
-	.kol2 {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		grid-gap: 10px;
-		align-items: flex-start;
-	}
-	.kol2_1 {
-		margin-bottom: 10px;
-		font-size: 12px;
-	}
-	.kol2_2 {
-		font-size: 12px;
-		text-align: right;
-		margin-bottom: 10px;
-	}
-	.kol2_2 div:first-child {
-		font-size: 12px;
-	}
-	.kol2_2 div:last-child {
-		font-size: 13px;
-	}
-	.kol2_3 {
-		font-size: 15px;
-		font-weight: 600;
-		margin-bottom: 3px;
-	}
-	.tombol {
-		padding: 9px 18px;
-		color: #fff !important;
-		background: #2aa7e2;
-		font-size: 14px;
-		border-radius: 4px;
-		vertical-align: middle;
-		cursor: pointer;
-	}
-	.p {
-		display: grid;
-		grid-template-columns: 2fr 9fr;
-		grid-column-gap: 30px;
-		align-items: center;
-		margin: 15px 0px 30px 0px;
-	}
-	.p img {
-		display: block;
-		width: 100%;
-		border-radius: 100%;
-		border: 1px solid #ccc;
-	}
-	.port {
-		margin: 10px 0px 120px 0px;
-		display: grid;
-		grid-template-columns: 7fr 3fr;
-		grid-column-gap: 20px;
-		align-items: flex-start;
-	}
-	.port img {
-		display: block;
-		width: 100%;
-		border-radius: 8px;
-		border: 1px solid #ccc;
-	}
-	.jport {
-		font-size: 15px;
-		font-weight: 600;
-		margin: 10px 0px;
-	}
-	.port1 {
-		display: grid;
-		grid-template-columns: repeat(1, 1fr);
-		grid-gap: 20px;
-		align-items: flex-start;
-	}
-	.port2 {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		grid-gap: 20px;
-		align-items: flex-start;
-	}
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+		* {
+			margin: 0;
+			padding: 0;
+			font-size: 16px;
+			font-family: 'Roboto', sans-serif;
+			line-height: 1.5;
+		}
+		body {
+			background: #fff;
+			color: #000;
+		}
+		a:link, a:visited, a:active {
+			text-decoration: none;
+			color: #000;
+			font-size: 12px;
+		}
+		a:hover {
+			color: #5369f0;
+		}
+		p {
+			margin-bottom: 30px;
+		}
+		ul, ol {
+			margin-left: 18px;
+			margin-bottom: 30px;
+		}
+		img {
+			user-select: none;
+		}
+		.konten {
+			padding: 22px;
+			max-width: 770px;
+			margin: 0 auto;
+		}
+		.lp1 {
+			font-size: 40px;
+			font-weight: 400;
+			text-align: center;
+		}
+		.lp1 h1 {
+			font-size: 40px;
+			font-weight: 400;
+		}
+		.lp2 {
+			font-size: 12px;
+			text-align: center;
+		}
+		.hr {
+			border-top: 1px solid #ccc;
+			margin: 10px 0px 20px 0px;
+		}
+		.j {
+			font-weight: 600;
+			margin-bottom: 4px;
+		}
+		.b {
+			font-weight: 600;
+		}
+		.ketpre {
+			white-space: pre-line;
+		}
+		.kol2 {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-gap: 10px;
+			align-items: flex-start;
+		}
+		.kol2_1 {
+			margin-bottom: 10px;
+			font-size: 12px;
+		}
+		.kol2_2 {
+			font-size: 12px;
+			text-align: right;
+			margin-bottom: 10px;
+		}
+		.kol2_2 div:first-child {
+			font-size: 12px;
+		}
+		.kol2_2 div:last-child {
+			font-size: 13px;
+		}
+		.kol2_3 {
+			font-size: 15px;
+			font-weight: 600;
+			margin-bottom: 3px;
+		}
+		.tombol {
+			padding: 9px 18px;
+			color: #fff !important;
+			background: #2aa7e2;
+			font-size: 14px;
+			border-radius: 4px;
+			vertical-align: middle;
+			cursor: pointer;
+		}
+		.p {
+			display: grid;
+			grid-template-columns: 2fr 9fr;
+			grid-column-gap: 30px;
+			align-items: center;
+			margin: 15px 0px 20px 0px;
+		}
+		.p img {
+			display: block;
+			width: 100%;
+			border-radius: 100%;
+			border: 1px solid #ccc;
+		}
+		.p p:last-child {
+			margin-bottom: 0px;
+		}
+		.port {
+			margin: 10px 0px 120px 0px;
+			display: grid;
+			grid-template-columns: 7fr 3fr;
+			grid-gap: 20px;
+			align-items: flex-start;
+		}
+		.port img {
+			display: block;
+			width: 100%;
+			border-radius: 8px;
+			border: 1px solid #ccc;
+		}
+		.port1 {
+			display: grid;
+			grid-template-columns: repeat(1, 1fr);
+			grid-gap: 20px;
+			align-items: flex-start;
+		}
+		.port2 {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-gap: 20px;
+			align-items: flex-start;
+		}
+		.jport {
+			font-size: 15px;
+			font-weight: 600;
+			margin: 10px 0px;
+		}
+		.eport {
+			color: #555;
+			margin-bottom: -22px;
+			text-align: center;
+		}
 
-	@media screen and (max-width: 960px) {
-	.p {
-		grid-gap: 25px;
-		align-items: flex-start;
-	}
-	.p p {
-		margin-bottom: 0px;
-	}
-	.port {
-		grid-template-columns: 1fr;
-		grid-gap: 30px;
-	}
-	}
-</style>
+		@media screen and (max-width: 960px) {
+			.p {
+				grid-gap: 25px;
+				align-items: flex-start;
+			}
+			.p p {
+				margin-bottom: 0px;
+			}
+			.port {
+				grid-template-columns: 1fr;
+			}
+		}
+
+		@media print {
+			* {
+				font-size: 12px;
+				font-family: Arial;
+				line-height: 1.4;
+			}
+			.konten {
+				padding: 0;
+				margin: 0;
+				max-width: 100%;
+			}
+			.j {
+				font-size: 13px;
+			}
+			.kol2_3 {
+				font-size: 12.4px;
+			}
+			.hr {
+				border-top: 1px solid #000;
+			}
+			.kport {
+				overflow: visible;
+				page-break-inside: avoid;
+			}
+			.jport {
+				font-size: 12.4px;
+			}
+			.eport {
+				color: #000;
+				font-weight: 600;
+				margin-bottom: -20px;
+			}
+		}
+	</style>
 </head>
 <body>
 <div class="konten">
@@ -190,7 +231,7 @@
 		<img src="upload/Ari.jpg" alt="Ari">
 		<div>
 			<div class="j">PROFIL</div>
-			<p>Saya adalah seorang web developer dan sistem analis program dengan pengalaman kerja lebih dari 2 tahun yang berorientasi pada Full Stack Developer.</p>
+			<p>Saya adalah seorang web developer dan sistem analis program dengan pengalaman kerja lebih dari 2 tahun, berorientasi pada Full Stack Developer. Saya menguasai framework Laravel dan database MySQL, serta ahli dalam menyusun tampilan antarmuka yang responsif untuk memudahkan akses pengguna dari berbagai perangkat.</p>
 		</div>
 	</div>
 
@@ -247,10 +288,7 @@
 	<div class="kol2_3">Universitas Wahid Hasyim Semarang</div>
 	<div class="kol2">
 		<div class="kol2_1">S1 Teknik Informatika</div>
-		<div class="kol2_2">
-			<div>2020</div>
-			<div>IPK 3.37/4.00</div>
-		</div>
+		<div class="kol2_2">(2020)</div>
 	</div>
 	<p>Fokus pada Web Developer: Full Stack Developer, System Analyst dan Desain UI/UX</p>
 
@@ -266,65 +304,112 @@
 
 	<div class="j">PORTOFOLIO</div>
 
-	<div class="jport">> E-Commerce Gashiota</div>
-	<div class="port">
-		<img src="upload/Portofolio-1.png" alt="Portofolio 1">
-		<img src="upload/Portofolio-2.png" alt="Portofolio 2">
-	</div>
-
-	<div class="jport">> E-Commerce Digibook Promotion</div>
-	<div class="port">
-		<img src="upload/Portofolio-3.png" alt="Portofolio 3">
-		<img src="upload/Portofolio-4.png" alt="Portofolio 4">
-	</div>
-
-	<div class="jport">> ERP Digibook Promotion</div>
-	<div class="port">
-		<img src="upload/Portofolio-5.png" alt="Portofolio 5">
-		<img src="upload/Portofolio-6.png" alt="Portofolio 6">
-	</div>
-
-	<div class="jport">> E-Commerce Brandtalk Advertising</div>
-	<div class="port">
-		<img src="upload/Portofolio-7.png" alt="Portofolio 7">
-		<img src="upload/Portofolio-8.png" alt="Portofolio 8">
-	</div>
-
-	<div class="jport">> Sistem Kasir Sera Mart</div>
-	<div class="port">
-		<div class="port1">
-			<img src="upload/Portofolio-9.png" alt="Portofolio 9">
-			<img src="upload/Portofolio-10.png" alt="Portofolio 10">
-		</div>
-		<div>
-			<img src="upload/Portofolio-11.png" alt="Portofolio 11">
+	<div class="kport">
+		<div class="jport">> E-Commerce Gashiota</div>
+		<div class="port">
+			<div class="port1">
+				<img src="upload/Portofolio-1.png" alt="Portofolio 1">
+				<img src="upload/Portofolio-22.png" alt="Portofolio 22">
+			</div>
+			<div class="port1">
+				<img src="upload/Portofolio-2.png" alt="Portofolio 2">
+				<img src="upload/Portofolio-23.png" alt="Portofolio 23">
+			</div>
 		</div>
 	</div>
 
-	<div class="jport">> Sponsorship Pesta Wirausaha</div>
-	<div class="port">
-		<img src="upload/Portofolio-12.png" alt="Portofolio 12">
-		<img src="upload/Portofolio-13.png" alt="Portofolio 13">
+	<div class="kport">
+		<div class="jport">> E-Commerce Digibook Promotion</div>
+		<div class="port">
+			<img src="upload/Portofolio-3.png" alt="Portofolio 3">
+			<img src="upload/Portofolio-4.png" alt="Portofolio 4">
+		</div>
 	</div>
 
-	<div class="jport">> Company Profile EasyTrust</div>
-	<div class="port">
-		<img src="upload/Portofolio-14.png" alt="Portofolio 14">
-		<img src="upload/Portofolio-15.png" alt="Portofolio 15">
+	<div class="kport">
+		<div class="jport">> ERP Digibook Promotion</div>
+		<div class="port">
+			<img src="upload/Portofolio-5.png" alt="Portofolio 5">
+			<img src="upload/Portofolio-6.png" alt="Portofolio 6">
+		</div>
 	</div>
 
-	<div class="jport">> ERP Sewa Videotron</div>
-	<div class="port">
-		<img src="upload/Portofolio-16.png" alt="Portofolio 16">
-		<img src="upload/Portofolio-17.png" alt="Portofolio 17">
+	<div class="kport">
+		<div class="jport">> E-Commerce Brandtalk Advertising</div>
+		<div class="port">
+			<img src="upload/Portofolio-7.png" alt="Portofolio 7">
+			<img src="upload/Portofolio-8.png" alt="Portofolio 8">
+		</div>
 	</div>
 
-	<div class="jport">> E-Commerce Souveneria</div>
-	<div class="port">
-		<img src="upload/Portofolio-18.png" alt="Portofolio 18">
-		<img src="upload/Portofolio-19.png" alt="Portofolio 19">
+	<div class="kport">
+		<div class="jport">> Sistem Kasir Sera Mart</div>
+		<div class="port">
+			<div class="port1">
+				<img src="upload/Portofolio-9.png" alt="Portofolio 9">
+				<img src="upload/Portofolio-10.png" alt="Portofolio 10">
+			</div>
+			<div>
+				<img src="upload/Portofolio-11.png" alt="Portofolio 11">
+			</div>
+		</div>
 	</div>
 
+	<div class="kport">
+		<div class="jport">> Sponsorship Pesta Wirausaha</div>
+		<div class="port">
+			<img src="upload/Portofolio-12.png" alt="Portofolio 12">
+			<img src="upload/Portofolio-13.png" alt="Portofolio 13">
+		</div>
+	</div>
+
+	<div class="kport">
+		<div class="jport">> E-Commerce Digital Merchandise</div>
+		<div class="port">
+			<img src="upload/Portofolio-25.png" alt="Portofolio 25">
+			<img src="upload/Portofolio-26.png" alt="Portofolio 26">
+		</div>
+	</div>
+
+	<div class="kport">
+		<div class="jport">> Company Profile EasyTrust</div>
+		<div class="port">
+			<div class="port1">
+				<img src="upload/Portofolio-14.png" alt="Portofolio 14">
+				<img src="upload/Portofolio-24.png" alt="Portofolio 24">
+			</div>
+			<div>
+				<img src="upload/Portofolio-15.png" alt="Portofolio 15">
+			</div>
+		</div>
+	</div>
+
+	<div class="kport">
+		<div class="jport">> ERP Sewa Videotron</div>
+		<div class="port">
+			<img src="upload/Portofolio-16.png" alt="Portofolio 16">
+			<img src="upload/Portofolio-17.png" alt="Portofolio 17">
+		</div>
+	</div>
+
+	<div class="kport">
+		<div class="jport">> E-Commerce Souveneria</div>
+		<div class="port">
+			<img src="upload/Portofolio-18.png" alt="Portofolio 18">
+			<img src="upload/Portofolio-19.png" alt="Portofolio 19">
+		</div>
+	</div>
+
+	<div class="kport">
+		<div class="jport">> E-Commerce SkinHealth</div>
+		<div class="port">
+			<img src="upload/Portofolio-20.png" alt="Portofolio 20">
+			<img src="upload/Portofolio-21.png" alt="Portofolio 21">
+		</div>
+	</div>
+
+	<div class="eport">//</div>
+	<div class="hr"></div>
 </div>
 </body>
 </html>
